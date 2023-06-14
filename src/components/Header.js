@@ -9,7 +9,7 @@ const Header = () => {
     <div>
       <Navbar> 
           <NavbarBrand href = "/">
-          <img src="../TBH.png" alt="logo" class="logo" />
+            <img src="../TBH.png" alt="logo" class="logo" />
           </NavbarBrand>
         <span class="tbh">TBH Apartments</span>
       </Navbar>

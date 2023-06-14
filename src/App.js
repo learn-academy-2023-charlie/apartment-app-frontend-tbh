@@ -12,7 +12,7 @@ const App = () => {
   return (
     <>
       <div class="header"> <Header/> </div>
-      <h3>Apartment App</h3>
+        <h3>Apartment App</h3>
       <div class="footer"> <Footer /> </div>
     </>
   );

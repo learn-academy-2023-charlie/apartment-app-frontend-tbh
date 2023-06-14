@@ -28,5 +28,4 @@ describe('<Header />', () => {
     const logoLink = screen.getByRole("link", { name: /logo/i });
     expect(logoLink).toHaveAttribute("href", "/");
   });
-
 })

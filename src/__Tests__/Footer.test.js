@@ -12,7 +12,6 @@ describe('<Has a page that renders without crashing />', () => {
     const footerText = screen.getByText(/tucker/i)
     expect(footerText).toBeInTheDocument()
   })
-
 })
 
 export default Footer
