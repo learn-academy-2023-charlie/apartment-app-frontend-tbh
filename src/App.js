@@ -1,9 +1,15 @@
 import React, { useState } from "react";
+import { Routes, Route } from "react-router-dom"
+import "./App.css"
+
 import mockUsers from "./mockUsers.js";
 import mockApartments from "./mockApartments.js";
+
 import Header from "./components/Header.js"
-import "./App.css"
 import Footer from "./components/Footer.js";
+import Home from "./pages/Home.js";
+import NotFound from "./pages/NotFound"
+
 
 const App = () => {
   const [currentUser, setCurrentUser] = useState(mockUsers[0]);
@@ -12,7 +18,9 @@ const App = () => {
   return (
     <>
       <div class="header"> <Header/> </div>
-        <h3>Apartment App</h3>
+      <Routes>
+        <Route path="/" element={ <Home /> } />
+      </Routes>
       <div class="footer"> <Footer /> </div>
     </>
   );
