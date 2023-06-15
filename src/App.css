@@ -1,12 +1,9 @@
-.logo {
-  height: 13vmin;
-  width: 13vmin;
-  align-content: center;
-  float: left;
-  padding: 5px;
-}
-
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
   color: white;
   font-size: 60px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -14,6 +11,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height:13vmin;
+}
+
+.logo {
+  height: 15vmin;
+  width: 15vmin;
+  padding: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.s-button {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-right: 5vmin;
+  height: 15vmin;
+  width: 15vmin;
+  padding: 0px;
+
+}
+.l-button {
+  position: fixed;
+  top: 0%;
+  right: 10%;
+  margin-right: 5vmin;
+  height: 15vmin;
+  width: 15vmin;
+  padding: 0px;
 }
 
 .footer {
@@ -58,16 +85,15 @@ h3 {
 .errorimg {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  height: 90vh;
+  flex-direction: column;
+  margin-top: 3%;
 }
 
 .errorimg img {
-  width: 80%;
-  height: 80%;
-  border: 5px solid black;
-  border-radius: 13%;
-  flex-direction: column;
+  max-width: 100%;
+  max-height: 92%;
+  object-fit: contain;
 }
 
 h2 {

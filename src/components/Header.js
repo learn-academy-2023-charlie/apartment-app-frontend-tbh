@@ -7,17 +7,19 @@ const Header = () => {
    }
 
   return (
-    <div>
+    <div className='header'>
       <Navbar>
         <NavbarBrand href="/">
           <img src="../TBH.png" alt="logo" className="logo" />
         </NavbarBrand>
         <span className="tbh">TBH Apartments</span>
       </Navbar>
-      <div onClick={handleClick}>
+      <div className='s-button' onClick={handleClick}>
         <Link to="/Signup">
           <Button color="success">Sign Up</Button>
         </Link>
+        </div>
+        <div className='s-button' onClick={handleClick}>
         <Link to="/Login">
           <Button color="danger">Login</Button>
         </Link>
