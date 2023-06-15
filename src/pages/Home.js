@@ -2,7 +2,12 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+      <h3> Find your new home </h3>
+        <body class="homeimg" >
+          <img alt="apartment image" src="../apt1.png"></img>
+        </body> 
+    </>
   )
 }
 

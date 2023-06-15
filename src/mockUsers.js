@@ -13,4 +13,4 @@ let mockUsers = [
   },
 ];
 
-export default mockUsers;
+export default mockUsers

@@ -46,4 +46,4 @@ let mockApartments = [
   },
 ];
 
-export default mockApartments;
+export default mockApartments
