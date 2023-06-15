@@ -8,6 +8,8 @@ import Footer from "./components/Footer.js";
 
 import Home from "./pages/Home.js";
 import NotFound from "./pages/NotFound.js"
+import SignUp from "./pages/SignUp";
+import Login from "./pages/Login"
 
 const App = () => {
   const [currentUser, setCurrentUser] = useState(mockUsers[0]);
@@ -15,12 +17,20 @@ const App = () => {
 
   return (
     <>
-      <div class="header"> <Header/> </div>
+      <div class="header">
+        {" "}
+        <Header />{" "}
+      </div>
       <Routes>
-        <Route path="/" element={ <Home /> } />
-        <Route path="*" element={ <NotFound /> } />
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
-      <div class="footer"> <Footer /> </div>
+      <div class="footer">
+        {" "}
+        <Footer />{" "}
+      </div>
     </>
   );
 };

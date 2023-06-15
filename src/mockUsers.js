@@ -1,15 +1,19 @@
 let mockUsers = [
   {
     id: 1,
-    email: "test1@example.com",
+    email: "t@tbh.com",
+    password: "tucker"
+
   },
   {
     id: 2,
-    email: "test2@example.com",
+    email: "h@tbh.com",
+    password: "henri"
   },
   {
     id: 3,
-    email: "test3@example.com",
+    email: "b@tbh.com",
+    password: "bea"
   },
 ];
 

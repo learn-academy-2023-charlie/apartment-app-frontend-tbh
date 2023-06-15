@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Login = ({ login }) => {
+const SignUp = ({ signup }) => {
   const formRef = useRef();
   const navigate = useNavigate();
 
@@ -12,12 +12,10 @@ const Login = ({ login }) => {
     const userInfo = {
       user: { email: data.email, password: data.password },
     };
-    console.log(userInfo);
-    login(userInfo);
+    signup(userInfo);
     navigate("/");
     e.target.reset();
   };
-
   return (
     <div>
       <form ref={formRef} onSubmit={handleSubmit}>
@@ -26,13 +24,20 @@ const Login = ({ login }) => {
         Password:{" "}
         <input type="password" name="password" placeholder="password" />
         <br />
-        <input type="submit" value="Login" />
+        Password:{" "}
+        <input
+          type="password"
+          name="password_confirmation"
+          placeholder="confirm password"
+        />
+        <br />
+        <input type="submit" value="Submit" />
       </form>
       <br />
       <div>
-        Not registered yet, <a href="/signup">Signup</a>{" "}
+        Already registered, <a href="/login">Login</a> here.
       </div>
     </div>
   );
 };
-export default Login;
+export default SignUp;
