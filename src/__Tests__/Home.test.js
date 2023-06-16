@@ -18,8 +18,7 @@ describe( '<Home />', () => {
         <Home />
       </BrowserRouter>
     )
-    screen.logTestingPlaygroundURL()
-    const koolAlt = screen.getByText( /find your new home/i )
-    expect( koolAlt ).toBeInTheDocument()
+    const picText = screen.getByText( /find your new home/i )
+    expect( picText ).toBeInTheDocument()
   })
 })

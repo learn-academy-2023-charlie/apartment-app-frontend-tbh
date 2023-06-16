@@ -19,8 +19,8 @@ describe('<Header />', () => {
         <Header />
       </BrowserRouter>
     )
-    const koolAlt = screen.getByText(/tbh apartments/i)
-    expect(koolAlt).toBeInTheDocument()
+    const headText = screen.getByText(/tbh apartments/i)
+    expect(headText).toBeInTheDocument()
   })
 
   it("has a clickable logo link", () => {

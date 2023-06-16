@@ -1,30 +1,33 @@
-import React, { useState } from 'react';
-import { Navbar, NavbarBrand, Button } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Navbar, NavbarBrand, Button } from "reactstrap";
+import { Link } from "react-router-dom";
+
 const Header = () => {
-   const handleClick = () => {
+  const handleClick = () => {
     console.log("button");
-   }
+  };
 
   return (
-    <div className='header'>
+    <div className="header">
       <Navbar>
         <NavbarBrand href="/">
           <img src="../TBH.png" alt="logo" className="logo" />
         </NavbarBrand>
-        <span className="tbh">TBH Apartments</span>
-      </Navbar>
-      <div className='s-button' onClick={handleClick}>
-        <Link to="/Signup">
-          <Button color="success">Sign Up</Button>
-        </Link>
+        <div className="sl-container">
+          <Link to="/Signup">
+            <Button className="sl-button" onClick={handleClick}>
+              Sign Up
+            </Button>
+          </Link>
+          <Link to="/Login">
+            <Button className="sl-button" onClick={handleClick}>
+              Login
+            </Button>
+          </Link>
         </div>
-        <div className='s-button' onClick={handleClick}>
-        <Link to="/Login">
-          <Button color="danger">Login</Button>
-        </Link>
-      </div>
+      </Navbar>
     </div>
   );
 };
-export default Header
+
+export default Header;
