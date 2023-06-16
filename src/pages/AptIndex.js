@@ -14,7 +14,7 @@ const AptIndex = () => {
           <p>Square Footage: {apt.square_footage}</p>
           <p>Price: {apt.price}</p>
           <p>Bedrooms: {apt.bedrooms}</p>
-          <p>Bathrooms: {apt.bathrooms}</p> {/* Fixed a typo here */}
+          <p>Bathrooms: {apt.bathrooms}</p>
           <p>Pets: {apt.pets}</p>
           <img src={apt.image} alt="Apartment" />
         </div>
