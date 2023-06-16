@@ -18,7 +18,6 @@ describe( '<Home />', () => {
         <Home />
       </BrowserRouter>
     )
-    screen.logTestingPlaygroundURL()
     const koolAlt = screen.getByText( /find your new home/i )
     expect( koolAlt ).toBeInTheDocument()
   })
